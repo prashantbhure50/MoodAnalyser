@@ -28,6 +28,12 @@ namespace UnitTestProject1
             var result = moodanalyser.analyseMoodLive1();
             Console.WriteLine(result);
         }
-
+        [TestMethod]
+        public void TestMethod4()
+        {
+            MoodAnalyser moodanalyser = new MoodAnalyser();
+            var result = moodanalyser.analyseMoodLive1();
+            Console.WriteLine(result);
+        }
     }
 }
