@@ -42,5 +42,15 @@ namespace UnitTestProject1
             var result = moodanalyser.analyseMoodLive1();
             Console.WriteLine(result);
         }
+        [TestMethod]
+        public void TestMethod6()
+        {
+            string message = null;
+            object result = new MoodAnalyserFactory(message);
+            object obj = MoodAnalyserFactory.CreateMoodAnalyser("MoodAnalyserCheck.MoodAnalyser", "MoodAnalyser");
+            result.Equals(obj);
+
+
+        }
     }
 }
