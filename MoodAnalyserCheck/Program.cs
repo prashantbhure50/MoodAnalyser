@@ -10,6 +10,9 @@ namespace MoodAnalyserCheck
     {
         static void Main(string[] args)
         {
+            Console.WriteLine("Welcome to Reflection Test");
+            Reflection.ReflectionTest();
+            Console.ReadKey();
         }
     }
 }
