@@ -12,35 +12,35 @@ namespace UnitTestProject1
         {
             MoodAnalyser moodanalyser = new MoodAnalyser("Sad");
             var result = moodanalyser.analyseMoodLive1();
-            Console.WriteLine(result);
+            Assert.AreEqual(result, "SAD");
         }
         [TestMethod]
         public void TestMethod2()
         {
             MoodAnalyser moodanalyser = new MoodAnalyser("I am in Sad Mood");
             var result = moodanalyser.analyseMoodLive1();
-            Console.WriteLine(result);
+            Assert.AreEqual(result, "SAD");
         }
         [TestMethod]
         public void TestMethod3()
         {
             MoodAnalyser moodanalyser = new MoodAnalyser("happy");
             var result = moodanalyser.analyseMoodLive1();
-            Console.WriteLine(result);
+            Assert.AreEqual(result,"HAPPY");
         }
         [TestMethod]
         public void TestMethod4()
         {
             MoodAnalyser moodanalyser = new MoodAnalyser();
             var result = moodanalyser.analyseMoodLive1();
-            Console.WriteLine(result);
+            Assert.AreEqual(result, "SAD");
         }
         [TestMethod]
         public void TestMethod5()
         {
             MoodAnalyser moodanalyser = new MoodAnalyser("");
             var result = moodanalyser.analyseMoodLive1();
-            Console.WriteLine(result);
+            Assert.AreEqual(result, "SAD");
         }
         [TestMethod]
         public void TestMethod6()
